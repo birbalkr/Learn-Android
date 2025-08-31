@@ -3,11 +3,25 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_subtitle">birbalkrgmail.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <string name="name">Birbal Kumar</string>
+
+
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="list">Lists</string>
+    <string name="moments">Moments</string>
+    <string name="highlights">Highlights</string>
+
+    <string name="setting_privacy">Setting and privacy</string>
+    <string name="help_center">Help Center</string>
+    <string name="night_mode">Night Mode</string>
+    <string name="QRScanner">QR code</string>"
+
 </resources>
