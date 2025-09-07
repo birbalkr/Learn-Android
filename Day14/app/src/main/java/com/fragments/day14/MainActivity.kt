@@ -1,21 +1,35 @@
-package com.recyclerview.day12.newproject
+package com.fragments.day14
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.recyclerview.day12.R
+import androidx.fragment.app.Fragment
+import com.fragments.day14.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+    lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_main2)
+        binding= ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        binding.btnTimme.setOnClickListener {
+            replaceFragment(Clock_Fragment())
+        }
+    }
+
+    private fun replaceFragment(fragment: Fragment) {
+        val fragmentManager = supportFragmentManager
+        val fragmentTransaction = fragmentManager.beginTransaction()
+        fragmentTransaction.replace(R.id.fragment_container, fragment)
+        fragmentTransaction.commit()
     }
 }

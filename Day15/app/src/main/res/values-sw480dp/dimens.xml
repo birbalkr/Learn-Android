@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size">16.1sp</dimen> <!-- 115% of 14 -->
+    <dimen name="margin">9.2dp</dimen>     <!-- 115% of 8 -->
+    <dimen name="padding">11.5dp</dimen>   <!-- 115% of 10 -->
+</resources>

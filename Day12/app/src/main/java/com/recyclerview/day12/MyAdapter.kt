@@ -19,7 +19,7 @@ class MyAdapter(val newaArray: ArrayList<News>, val context: MainActivity):Recyc
     }
 
     override fun onBindViewHolder(holder: MyAdapter.MyViewHolder, position: Int) {
-        val currentNews = newaArray[position]
+            val currentNews = newaArray[position]
         holder.headingTitle.text = currentNews.newsHeading
         holder.headingImage.setImageResource(currentNews.newsImage)
     }
