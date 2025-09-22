@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity() {
         retrofitData.enqueue(object : Callback<MyData?> {
             override fun onResponse(call: Call<MyData?>, response: Response<MyData?>) {
 
-                val responseBody = response.body()
+                    val responseBody = response.body()
                 val producetList = responseBody?.products!!
                 myProductAdpter = MyProductAdpter(this@MainActivity,producetList)
                 recyclerView.adapter = myProductAdpter
